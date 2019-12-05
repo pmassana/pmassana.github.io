@@ -4,7 +4,7 @@ My thesis is focused on the study of the Small Magellanic Cloud (SMC) using phot
 
 ## CV
 
-Have a look at my [CV](pmassana.github.io/CV.pdf) :) 
+Have a look at my [CV](https://github.com/pmassana/pmassana.github.io/raw/master/CV.pdf) :) 
 
 ## Welcome to GitHub Pages
 
