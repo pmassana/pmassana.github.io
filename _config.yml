@@ -2,7 +2,7 @@
 title:              Pol Massana
 bio:                PhD student and the University of Surrey
 description:        "Personal website of Pol Massana"
-locale:             en_US
+locale:             en_GB
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
@@ -36,7 +36,7 @@ defaults:
     author:
 
 # Jekyll
-permalink:          /blog/:title/
+#permalink:          /blog/:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
