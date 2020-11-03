@@ -22,7 +22,7 @@ email:              polmass@gmail.com # change this to your email to receive fre
 phone:              No phone
 
 # Other
-background_image:   /images/bg.jpg
+background_image:   /images/magellanic_bg.jpg
 # Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
 slapform_thankyou_page: /thank-you
 
