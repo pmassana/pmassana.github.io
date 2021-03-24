@@ -4,7 +4,7 @@ bio:                PhD student and the University of Surrey
 description:        "Personal website of Pol Massana"
 locale:             en_GB
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "http://pmassana.github.io" # the base hostname & protocol for your site
 
 # Comments
 disqus_shortname:   default
@@ -49,6 +49,7 @@ mathjax:            true
 sass:
   sass_dir:         _sass
   style:            compressed
+permalink: date
 
 # Gems
 plugins:
