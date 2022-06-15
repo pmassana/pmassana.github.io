@@ -1,8 +1,9 @@
 # Site
 title:              Pol Massana
-bio:                PhD student and the University of Surrey
+bio:                Postdoc at Montana State University
 description:        "Personal website of Pol Massana"
 locale:             en_GB
+domain: https://pmassana.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://pmassana.github.io" # the base hostname & protocol for your site
 
@@ -19,12 +20,11 @@ github:             pmassana
 # personal
 location:           Bozeman, Montana
 email:              polmass@gmail.com # change this to your email to receive free emails for your contact submissions via Slapform.com
-phone:              No phone
 
 # Other
 background_image:   /images/magellanic_bg.jpg
 # Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
-slapform_thankyou_page: /thank-you
+#slapform_thankyou_page: /thank-you
 
 defaults:
 - scope:
