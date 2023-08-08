@@ -1,72 +1,189 @@
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 # Site
-title:              Pol Massana
-bio:                Postdoc at Montana State University
+title:              ''
+title_separator:           "-"
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : "Pol Massana Zapata"
 description:        "Personal website of Pol Massana"
 locale:             en_GB
-domain: https://pmassana.github.io
+repository               : pmassana/pmassana.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+#domain: https://pmassana.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://pmassana.github.io" # the base hostname & protocol for your site
+url: "https://pmassana.github.io" # the base hostname & protocol for your site
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 
 # Comments
-disqus_shortname:   default
+#disqus_shortname:   default
 
 # Social
-analytics-id:       "default"
+#analytics-id:       "default"
 twitter:            pol_astro
 #facebook:           default
 #instagram:          default
 github:             pmassana
 
-# personal
-location:           Bozeman, Montana
-email:              polmass@gmail.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+# Site Author
+author:
+  name             : "Pol Massana"
+  avatar           : "/assets/images/IMG20230312081440~2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Postdoc at Montana State University"
+  location         : "Bozeman, Montana"
+  email            : "pol.massana@montana.edu"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:pol.massana@montana.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://pmassana.github.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/pol_astro"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/pmassana"
+
+# Site Footer
+footer:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:pol.massana@montana.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://pmassana.github.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/pol_astro"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/pmassana"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Other
-background_image:   /images/magellanic_bg.jpg
+# background_image:   /images/magellanic_bg.jpg
 # Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
 #slapform_thankyou_page: /thank-you
 
+# defaults:
+# - scope:
+#     path: ''
+#     type: posts
+#   values:
+#     permalink: "/blog/:title/"
+#     layout: post
+#     author:
 defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    author:
+  # _pages
+  - scope:
+      path: "/_pages/"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
 
 # Jekyll
-#permalink:          /blog/:title/
 markdown:           kramdown
 highlighter:        rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 mathjax:            true
 sass:
   sass_dir:         _sass
   style:            compressed
-permalink: date
+permalink: /:categories/:title/
+
+paginate: 5
+paginate_path: "/page:num/"
+timezone: "America/Boise" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Gems
 plugins:
-  - jekyll-mentions
+ # - jekyll-mentions
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-remote-theme
+  - jekyll-include-cache
 
-paginate: 6
-paginate_path: "/blog/page:num/"
+# jekyll-mentions:
+#   base_url: https://github.com
 
-jekyll-mentions:
-  base_url: https://github.com
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
 
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE.md, Rakefile, old]
 
-remote_theme: pages-themes/cayman@v0.2.0
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
