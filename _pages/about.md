@@ -1,6 +1,6 @@
 ---
 layout: single
-title: About
+#title: About
 description: Brief bio
 #permalink: /publications/
 author_profile: true

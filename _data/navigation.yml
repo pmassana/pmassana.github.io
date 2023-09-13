@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "About"
-    url: https://pmassana.github.io/
+    url: /_pages/about/
   - title: "Publications"
     url: /_pages/publications/
   # - title: "Sample Posts"
