@@ -36,19 +36,16 @@ github:             pmassana
 author:
   name             : "Pol Massana"
   avatar           : "/assets/images/IMG20230312081440~2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Postdoc at Montana State University"
-  location         : "Bozeman, Montana"
-  email            : "pol.massana@montana.edu"
+  bio              : "NOIRLab Fellow"
+  location         : "La Serena, Chile"
+  email            : "pol.massana@noirlab.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:pol.massana@montana.edu"
+      url: "mailto:pol.massana@noirlab.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://pmassana.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/pol_astro"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/pmassana"
@@ -58,7 +55,7 @@ footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:pol.massana@montana.edu"
+      url: "mailto:pol.massana@noirlab.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://pmassana.github.io"
@@ -152,7 +149,7 @@ permalink: /:categories/:title/
 
 paginate: 5
 paginate_path: "/page:num/"
-timezone: "America/Boise" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: "America/Santiago" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Gems
 plugins:
